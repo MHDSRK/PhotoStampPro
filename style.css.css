@@ -1,0 +1,311 @@
+﻿/* =====================================
+   Photo Stamp Pro
+   Version 0.1
+======================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:#f2f5f9;
+
+    color:#222;
+
+    min-height:100vh;
+
+}
+
+/* Container */
+
+.container{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:20px 15px 120px;
+
+}
+
+/* Header */
+
+.header{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.header h1{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    color:#1565C0;
+
+}
+
+.header p{
+
+    margin-top:8px;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+/* Cards */
+
+.card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:18px;
+
+    margin-bottom:18px;
+
+    box-shadow:
+
+        0 4px 12px rgba(0,0,0,.08);
+
+}
+
+/* Titles */
+
+.card h2{
+
+    font-size:20px;
+
+    margin-bottom:15px;
+
+}
+
+/* Labels */
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+/* Inputs */
+
+input[type=text]{
+
+    width:100%;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:1px solid #ddd;
+
+    font-size:16px;
+
+    outline:none;
+
+    transition:.2s;
+
+}
+
+input[type=text]:focus{
+
+    border-color:#1565C0;
+
+}
+
+/* File Picker */
+
+input[type=file]{
+
+    width:100%;
+
+    padding:12px;
+
+    border-radius:12px;
+
+    border:2px dashed #1565C0;
+
+    background:#f7fbff;
+
+}
+
+/* Photo Count */
+
+#photoCount{
+
+    margin-top:12px;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+/* Buttons */
+
+button{
+
+    cursor:pointer;
+
+    border:none;
+
+    transition:.25s;
+
+}
+
+/* Save Button */
+
+#saveProfile{
+
+    width:100%;
+
+    margin-top:18px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+}
+
+#saveProfile:hover{
+
+    background:#0b5ed7;
+
+}
+
+/* Preview */
+
+.previewBox{
+
+    width:100%;
+
+    height:420px;
+
+    border-radius:14px;
+
+    border:2px dashed #bbb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:#fafafa;
+
+}
+
+#previewCanvas{
+
+    width:100%;
+
+    display:none;
+
+}
+
+#previewText{
+
+    color:#777;
+
+}
+
+/* Bottom Action */
+
+.actionBar{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    right:0;
+
+    background:white;
+
+    padding:18px;
+
+    box-shadow:
+
+        0 -5px 18px rgba(0,0,0,.08);
+
+}
+
+#stampButton{
+
+    width:100%;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    background:#1565C0;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+}
+
+#stampButton:hover{
+
+    background:#0d47a1;
+
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.header h1{
+
+    font-size:26px;
+
+}
+
+.card{
+
+    padding:15px;
+
+}
+
+.previewBox{
+
+    height:320px;
+
+}
+
+}
