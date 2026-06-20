@@ -1,1 +1,1 @@
-# PhotoStampPro
+# PhotoStamper
